@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Barre de progression */
+$gray: #777;
+$gray-light: #ccc;
+$dark-blue: #0b1830;
+$purple: #7b2be2;
+$white: #fff;
+
+.progressbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 12px;
+      text-align: center;
+      color: $gray;
+      max-width: 90px;
+    }
+
+    &.completed p {
+      color: $dark-blue;
+      font-weight: 600;
+    }
+
+    &.active p {
+      color: $purple;
+      font-weight: 600;
+    }
+  }
+
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid $gray;
+    background: $white;
+    position: relative;
+  }
+
+  .circle.check {
+    background: $dark-blue;
+    border-color: $dark-blue;
+
+    &::after {
+      content: "✔";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 10px;
+      color: $white;
+    }
+  }
+
+  .circle.active {
+    background: $purple;
+    border-color: $purple;
+  }
+
+  .line {
+    flex: 1;
+    height: 2px;
+    background: $gray-light;
+    margin: 0 5px;
+
+    &.completed {
+      background: $dark-blue;
+    }
+  }
+}
+
+/* Titres */
+h2 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Grid sections */
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.estimation .price {
+  font-size: 28px;
+  color: #7b2be2;
+  font-weight: bold;
+}
+
+.info-box {
+  font-size: 12px;
+  color: #555;
+  background: #f5f5f5;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.vehicule ul {
+  list-style: none;
+  padding: 0;
+}
+.vehicule li {
+  padding: 5px 0;
+  font-size: 14px;
+}
+.vehicule span {
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+}
+
+/* Point de vente */
+.vente .phone {
+  color: #7b2be2;
+  font-weight: bold;
+}
+.link {
+  color: #7b2be2;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.map {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+/* Projet achat */
+.achat {
+  background: #f0f4ff;
+}
+.achat-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}

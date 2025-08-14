@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dommages Véhicule</title>
+    <link rel="stylesheet" href="dommage2.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="progressbar">
+        <div class="step completed">
+          <div class="circle check"></div>
+          <p>Informations du véhicule</p>
+        </div>
+        <div class="line completed"></div>
+        <div class="step active">
+          <div class="circle active"></div>
+          <p>Votre point de vente</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="circle"></div>
+          <p>Votre profil</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="circle"></div>
+          <p>Votre estimation</p>
+        </div>
+      </div>
+    </div>
+      <h2>Indiquer le ou les dommages de votre véhicule</h2>
+
+      <!-- Boutons sections -->
+      <div class="damage-buttons">
+        <button class="btn">DROITE <span class="badge">2 défauts</span></button>
+        <button class="btn">GAUCHE</button>
+        <button class="btn">AVANT</button>
+        <button class="btn">ARRIÈRE</button>
+        <button class="btn selected">DESSUS</button>
+        <label class="checkbox">
+          <input type="checkbox" /> Aucun dommage
+        </label>
+      </div>
+
+      <!-- Carte véhicule -->
+      <div class="vehicle-map">
+        <img src="voiture2.png" alt="Vue de dessus du véhicule" />
+        <div class="plus-icon">+</div>
+      </div>
+
+      <!-- Types de dommages -->
+      <div class="damage-type">
+        <h3>TOIT</h3>
+        <ul>
+          <li><input type="radio" name="damage" /> éclats de pierre</li>
+          <li><input type="radio" name="damage" /> éraflures superficielles</li>
+          <li><input type="radio" name="damage" /> éraflures profondes</li>
+          <li>
+            <input type="radio" name="damage" /> déformations superficielles
+          </li>
+          <li><input type="radio" name="damage" /> déformations profondes</li>
+          <li><input type="radio" name="damage" /> rouille</li>
+        </ul>
+      </div>
+
+      <!-- Boutons navigation -->
+      <div class="nav-buttons">
+        <button class="btn prev" onclick="location.href='dommage.html'">
+          PRÉCÉDENT
+        </button>
+        <button class="btn next" onclick="location.href='addresse.html'">
+          CONTINUER
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dommages véhicule</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dommage.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Barre de progression -->
+      <div class="progressbar">
+        <div class="step completed">
+          <div class="circle check"></div>
+          <p>Informations du véhicule</p>
+        </div>
+        <div class="line completed"></div>
+        <div class="step active">
+          <div class="circle active"></div>
+          <p>Votre point de vente</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="circle"></div>
+          <p>Votre profil</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="circle"></div>
+          <p>Votre estimation</p>
+        </div>
+      </div>
+
+      <!-- Titre -->
+      <h2>Indiquer le ou les dommages de votre véhicule</h2>
+
+      <!-- Boutons côtés -->
+      <div class="damage-buttons">
+        <button class="active">DROITE</button>
+        <button>GAUCHE</button>
+        <button>AVANT</button>
+        <button>ARRIÈRE</button>
+        <button>DESSUS</button>
+      </div>
+
+      <!-- Aucun dommage -->
+      <div class="no-damage">
+        <input type="checkbox" id="none" />
+        <label for="none">Aucun dommage</label>
+      </div>
+
+      <!-- Contenu principal -->
+      <div class="main-content">
+        <!-- Image véhicule -->
+        <div class="car-container">
+          <img src="voiture.png" alt="Véhicule" class="car-image" />
+          <div class="point" style="top: 20%; left: 20%"></div>
+          <div class="point" style="top: 40%; left: 40%"></div>
+          <div class="point" style="top: 60%; left: 25%"></div>
+          <div class="point" style="top: 50%; left: 60%"></div>
+          <div class="point" style="top: 70%; left: 50%"></div>
+          <div class="point" style="top: 30%; left: 70%"></div>
+        </div>
+
+        <!-- Liste dommages -->
+        <div class="damage-list">
+          <h4>PORTE ARRIÈRE DROITE</h4>
+          <ul>
+            <li><input type="radio" name="damage" /> éclats de pierre</li>
+            <li>
+              <input type="radio" name="damage" /> éraflures superficielles
+            </li>
+            <li><input type="radio" name="damage" /> éraflures profondes</li>
+            <li>
+              <input type="radio" name="damage" /> déformations superficielles
+            </li>
+            <li><input type="radio" name="damage" /> déformations profondes</li>
+            <li><input type="radio" name="damage" /> rouille</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Boutons navigation -->
+      <div class="actions">
+        <button class="btn-outline" onclick="location.href='pointvente.html'">
+          PRÉCÉDENT
+        </button>
+        <button class="btn-primary" onclick="location.href='dommage2.html'">
+          CONTINUER
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

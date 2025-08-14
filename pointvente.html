@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Point de vente</title>
+    <link rel="stylesheet" href="pointvente.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="poinvente-container">
+      <!-- Barre de progression -->
+      <div class="progressbar">
+        <div class="step completed">
+          <div class="circle check"></div>
+          <p>Informations du véhicule</p>
+        </div>
+        <div class="line completed"></div>
+        <div class="step active">
+          <div class="circle active"></div>
+          <p>Votre point de vente</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="circle"></div>
+          <p>Votre profil</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="circle"></div>
+          <p>Votre estimation</p>
+        </div>
+      </div>
+    </div>
+      <!-- Titre -->
+      <h2>Indiquer le ou les dommages de votre le véhicule</h2>
+
+      <!-- Boutons dommages -->
+      <div class="damage-buttons">
+        <button class="damage-btn">DROITE</button>
+        <button class="damage-btn">GAUCHE</button>
+        <button class="damage-btn">AVANT</button>
+        <button class="damage-btn">ARRIÈRE</button>
+        <button class="damage-btn">DESSUS</button>
+      </div>
+
+      <!-- Aucun dommage -->
+      <div class="no-damage">
+        <input type="checkbox" id="aucun" />
+        <label for="aucun">Aucun dommage</label>
+      </div>
+
+      <!-- Boutons navigation -->
+      <div class="action-buttons">
+        <button class="btn-outline" onclick="location.href='information.html'">
+          PRÉCÉDENT
+        </button>
+        <button class="btn-primary" onclick="location.href='dommage.html'">
+          CONTINUER
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

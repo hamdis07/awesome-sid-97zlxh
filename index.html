@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estimation de reprise</title>
+    <link rel="stylesheet" href="index.scss" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Estimation de reprise de votre voiture</h1>
+
+      <div class="selection-zone">
+        <!-- Bloc Marques -->
+        <div class="brand-selection">
+          <h2>Sélectionnez la marque de votre véhicule</h2>
+          <div class="brands">
+            <button class="brand-btn">
+              <img src="renault.png" alt="Renault" />
+              <span>RENAULT</span>
+            </button>
+            <button class="brand-btn">
+              <img src="peugeot.png" alt="Peugeot" />
+              <span>PEUGEOT</span>
+            </button>
+            <button class="brand-btn">
+              <img src="citroen.png" alt="Citroën" />
+              <span>CITROËN</span>
+            </button>
+            <button class="brand-btn">
+              <img src="opel.png" alt="Opel" />
+              <span>OPEL</span>
+            </button>
+            <button class="brand-btn">
+              <img src="vw.png" alt="Volkswagen" />
+              <span>VOLKSWAGEN</span>
+            </button>
+            <button class="brand-btn more-btn">
+              <span class="plus-symbol">+</span>
+              <span>PLUS DE MARQUES</span>
+            </button>
+          </div>
+          <br />
+          <br />
+          <button class="cta-btn" onclick="location.href='information.html'">
+            COMMENCEZ MON ESTIMATION →
+          </button>
+        </div>
+
+        <div class="or">OU</div>
+
+        <!-- Bloc Immatriculation -->
+        <div class="plate-selection">
+          <h2>Saisissez l’immatriculation de votre véhicule</h2>
+          <label for="plate">Votre immatriculation</label>
+          <input type="text" id="plate" placeholder="AB-123-CD" />
+          <button class="cta-btn" onclick="location.href='erreur.html'">
+            COMMENCEZ MON ESTIMATION →
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

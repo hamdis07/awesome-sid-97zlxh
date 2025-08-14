@@ -1,0 +1,87 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f8fa;
+  margin: 0;
+  padding: 0;
+}
+
+.error-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.error-container h1 {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 20px;
+  color: #1a1a1a;
+}
+
+.error-container .subtitle {
+  margin: 0 20px 20px;
+  color: #555;
+}
+
+.image-section {
+  position: relative;
+}
+
+.bg-image {
+  width: 100%;
+  display: block;
+}
+
+.overlay-buttons {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: white;
+}
+
+.overlay-buttons p {
+  margin: 10px 0;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: white;
+  color: #0c0c1c;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+.or-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  background: white;
+  color: #0c0c1c;
+}
+
+.home-btn .home-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}

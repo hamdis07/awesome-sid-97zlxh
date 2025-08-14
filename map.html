@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Votre point de vente</title>
+    <link rel="stylesheet" href="map.scss" />
+    <!-- Leaflet CSS (pour la carte) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Barre de progression -->
+      <div class="progressbar">
+        <div class="step completed">
+          <div class="circle check"></div>
+          <p>Informations du véhicule</p>
+        </div>
+        <div class="line completed"></div>
+        <div class="step active">
+          <div class="circle active"></div>
+          <p>Votre point de vente</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="circle"></div>
+          <p>Votre profil</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="circle"></div>
+          <p>Votre estimation</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- Titre -->
+      <h2>Choisissez votre point de vente</h2>
+
+      <!-- Champ de recherche -->
+      <div class="search-box">
+        <input type="text" placeholder="Code postal, ville" />
+        <button class="search-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="16"
+            fill="white"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21 20l-5.8-5.8a7.5 7.5 0 10-1.4 1.4L20 21zM4 10.5a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Contenu principal -->
+      <div class="main-content">
+        <!-- Liste des concessions -->
+        <div class="concession-list">
+          <div class="card">
+            <h4>PEUGEOT PSA RETAIL MARSEILLE</h4>
+            <p>204, Boulevard Michelet,<br />13008 Marseille</p>
+            <span class="distance">À 3.00 km</span>
+            <button class="btn-outline">CHOISIR MA CONCESSION</button>
+          </div>
+          <div class="card">
+            <h4>PEUGEOT PSA RETAIL MARSEILLE</h4>
+            <p>204, Boulevard Michelet,<br />13008 Marseille</p>
+            <span class="distance">À 3.00 km</span>
+            <button class="btn-outline">CHOISIR MA CONCESSION</button>
+          </div>
+        </div>
+
+        <!-- Carte -->
+        <div id="map"></div>
+      </div>
+
+      <!-- Boutons navigation -->
+      <div class="nav-buttons">
+        <button class="btn-prev" onclick="location.href='addresse.html'">
+          PRÉCÉDENT
+        </button>
+        <button class="btn-next" onclick="location.href='profile.html'">
+          CONTINUER ➜
+        </button>
+      </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+      var map = L.map("map").setView([46.603354, 1.888334], 6); // France centre
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
+
+      // Exemple marqueur
+      L.marker([43.296482, 5.36978])
+        .addTo(map)
+        .bindPopup("PSA Retail Marseille");
+    </script>
+  </body>
+</html>

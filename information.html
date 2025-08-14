@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informations du véhicule</title>
+    <link rel="stylesheet" href="information.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Barre de progression -->
+      <div class="progress-bar">
+        <div class="step active">
+          <span>Informations du véhicule</span>
+          <div class="circle filled"></div>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <span>Votre point de vente</span>
+          <div class="circle"></div>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <span>Votre profil</span>
+          <div class="circle"></div>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <span>Votre estimation</span>
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <!-- Détails véhicule -->
+      <h2>Votre immatriculation <a href="#">AB-344-CA</a></h2>
+
+      <div class="vehicle-info">
+        <div class="info-item">
+          <img src="modele.png" alt="Marque" />
+          <span>Marque</span>
+          <strong>Peugeot</strong>
+        </div>
+        <div class="info-item">
+          <img src="modele.png" alt="Modèle" />
+          <span>Modèle</span>
+          <strong>2005</strong>
+        </div>
+        <div class="info-item">
+          <img src="modele.png" alt="Boîte" />
+          <span>Boîte</span>
+          <strong>Manuelle</strong>
+        </div>
+        <div class="info-item">
+          <img src="icone/date.png" alt="1ère immatriculation" />
+          <span>1<sup>ère</sup> immatriculation</span>
+          <strong>11/2020</strong>
+        </div>
+        <div class="info-item">
+          <img src="icons/energie.png" alt="Energie" />
+          <span>Energie</span>
+          <strong>Diesel</strong>
+        </div>
+        <div class="info-item">
+          <img src="icone/moteur.PNG" alt="Puissance DIN" />
+          <span>Puissance DIN</span>
+          <strong>120 ch</strong>
+        </div>
+        <div class="info-item">
+          <img src="icone/moteur.PNG" alt="Puissance fiscale" />
+          <span>Puissance fiscale</span>
+          <strong>6 cv</strong>
+        </div>
+        <div class="info-item">
+          <img src="modele.png" alt="Silhouette" />
+          <span>Silhouette</span>
+          <strong>SUV - 4x4</strong>
+        </div>
+        <div class="info-item">
+          <img src="modele.png" alt="Portes" />
+          <span>Portes</span>
+          <strong>5</strong>
+        </div>
+        <br />
+        <div class="navigation-buttons">
+          <button class="prev-btn" onclick="location.href='index.html'">
+            PRÉCÉDENT
+          </button>
+          <button class="next-btn" onclick="location.href='pointvente.html'">
+            CONTINUER
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

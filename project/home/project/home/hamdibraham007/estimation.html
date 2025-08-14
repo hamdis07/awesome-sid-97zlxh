@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Votre estimation</title>
+    <link rel="stylesheet" href="estimation.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Barre de progression -->
+      <div class="progressbar">
+        <div class="step completed">
+          <div class="circle check"></div>
+          <p>Informations du véhicule</p>
+        </div>
+        <div class="line completed"></div>
+        <div class="step completed">
+          <div class="circle check"></div>
+          <p>Votre point de vente</p>
+        </div>
+        <div class="line"></div>
+        <div class="step completed">
+          <div class="circle check"></div>
+          <p>Votre profil</p>
+        </div>
+        <div class="line"></div>
+        <div class="step active  ">
+          <div class="circle active"></div>
+          <p>Votre estimation</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- Titre -->
+      <h2>Votre estimation</h2>
+      <p class="subtitle">
+        Merci, votre demande n° <strong>25413B</strong> a bien été prise en
+        compte.
+      </p>
+
+      <div class="grid">
+        <!-- Bloc estimation -->
+        <div class="box estimation">
+          <h3>Estimation de votre reprise</h3>
+          <p class="price">8 390€</p>
+          <div class="info-box">
+            Avec 750€ de frais de remise en état standard déjà déduits. Frais à
+            ajuster selon l’état réel de votre véhicule
+          </div>
+        </div>
+
+        <!-- Bloc véhicule -->
+        <div class="box vehicule">
+          <h3>Votre véhicule</h3>
+          <ul>
+            <li><span>Marque</span> Peugeot</li>
+            <li><span>Modèle</span> 2005</li>
+            <li>
+              <span>Version</span> GENERATION-II COMBI I6 BLUEHDI 100 LIVE
+              EDITION DANGEL 4X4
+            </li>
+            <li><span>Kilométrage</span> 82 000 Km</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Point de vente -->
+      <div class="box vente">
+        <h3>Votre point de vente</h3>
+        <p>
+          PEUGEOT PSA RETAIL MICHELET <br />
+          204 Boulevard Michelet <br />
+          75015 Paris
+        </p>
+        <p class="phone">📞 04 89 31 38 29</p>
+        <a href="#" class="link">Calculer mon itinéraire</a>
+        <img src="map.png" alt="Carte" class="map" />
+      </div>
+
+      <!-- Projet achat -->
+      <div class="box achat">
+        <h3>Votre projet d'achat</h3>
+        <p class="achat-title">PEUGEOT 3008</p>
+        <p>3008 Puretech 130ch S&S EAT8 GT Pack</p>
+      </div>
+    </div>
+  </body>
+</html>

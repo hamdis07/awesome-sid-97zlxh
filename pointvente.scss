@@ -1,0 +1,181 @@
+// Couleurs
+$white: #ffffff;
+$dark-blue: #0b1e3a;
+$purple: #6a0eff;
+$black-gray: #333333;
+$gray-light: #cccccc;
+
+// Style global
+body {
+  font-family: "Montserrat", sans-serif;
+  background: $white;
+  margin: 0;
+  padding: 0;
+}
+
+.poinvente-container {
+  color: $dark-blue;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 2rem 0;
+  }
+}
+
+/* Barre de progression */
+$gray: #777;
+$gray-light: #ccc;
+$dark-blue: #0b1830;
+$purple: #7b2be2;
+$white: #fff;
+
+.progressbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 12px;
+      text-align: center;
+      color: $gray;
+      max-width: 90px;
+    }
+
+    &.completed p {
+      color: $dark-blue;
+      font-weight: 600;
+    }
+
+    &.active p {
+      color: $purple;
+      font-weight: 600;
+    }
+  }
+
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid $gray;
+    background: $white;
+    position: relative;
+  }
+
+  .circle.check {
+    background: $dark-blue;
+    border-color: $dark-blue;
+
+    &::after {
+      content: "✔";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 10px;
+      color: $white;
+    }
+  }
+
+  .circle.active {
+    background: $purple;
+    border-color: $purple;
+  }
+
+  .line {
+    flex: 1;
+    height: 2px;
+    background: $gray-light;
+    margin: 0 5px;
+
+    &.completed {
+      background: $dark-blue;
+    }
+  }
+}
+
+/* Boutons dommages */
+.damage-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  .damage-btn {
+    border: 2px solid $dark-blue;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+    background: $white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+
+    &:hover {
+      background: $purple;
+      color: $white;
+      border-color: $purple;
+    }
+  }
+}
+
+/* Checkbox aucun dommage */
+.no-damage {
+  margin-bottom: 2rem;
+  font-size: 16px;
+
+  input {
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+  }
+}
+
+/* Boutons navigation */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  .btn-outline {
+    border: 2px solid $dark-blue;
+    background: none;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+
+    &:hover {
+      background: $dark-blue;
+      color: $white;
+    }
+  }
+
+  .btn-primary {
+    background: $purple;
+    color: $white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+
+    &:hover {
+      background: darken($purple, 10%);
+    }
+  }
+}

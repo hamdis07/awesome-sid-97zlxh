@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Votre point de vente</title>
+    <link rel="stylesheet" href="addresse.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Barre de progression -->
+      <div class="progressbar">
+        <div class="step completed">
+          <div class="circle check"></div>
+          <p>Informations du véhicule</p>
+        </div>
+        <div class="line completed"></div>
+        <div class="step active">
+          <div class="circle active"></div>
+          <p>Votre point de vente</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="circle"></div>
+          <p>Votre profil</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="circle"></div>
+          <p>Votre estimation</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- Titre -->
+      <h2>Choisissez votre point de vente</h2>
+
+      <!-- Champ de recherche -->
+      <div class="search-box">
+        <input type="text" placeholder="Code postal, ville" />
+        <button class="search-btn">🔍</button>
+      </div>
+
+      <!-- Boutons navigation -->
+      <div class="nav-buttons">
+        <button class="btn-prev" onclick="location.href='dommage2.html'">
+          PRÉCÉDENT
+        </button>
+        <button class="btn-next" onclick="location.href='map.html'">
+          CONTINUER ➜
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

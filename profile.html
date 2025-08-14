@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Votre profil</title>
+    <link rel="stylesheet" href="profile.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Barre de progression -->
+      <div class="progressbar">
+        <div class="step completed">
+          <div class="circle check"></div>
+          <p>Informations du véhicule</p>
+        </div>
+        <div class="line completed"></div>
+        <div class="step completed">
+          <div class="circle check"></div>
+          <p>Votre point de vente</p>
+        </div>
+        <div class="line"></div>
+        <div class="step active">
+          <div class="circle active "></div>
+          <p>Votre profil</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="circle "></div>
+          <p>Votre estimation</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- Titre -->
+      <h2>Saisissez vos coordonnées</h2>
+      <p class="subtitle">
+        Indiquez vos coordonnées pour visualiser votre estimation en ligne et la
+        recevoir par email.<br />
+        Vos coordonnées permettront au point de vente de vous rappeler.
+      </p>
+
+      <!-- Formulaire -->
+      <form>
+        <fieldset>
+          <legend>Mes informations</legend>
+          <label>
+            Civilité *
+            <div class="radio-group">
+              <label><input type="radio" name="civilite" /> Madame</label>
+              <label><input type="radio" name="civilite" /> Monsieur</label>
+            </div>
+          </label>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label
+                >Prénom *<input type="text" placeholder="Votre prénom"
+              /></label>
+            </div>
+            <div class="form-group">
+              <label>Nom *<input type="text" placeholder="Votre nom" /></label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label
+                >Email *<input type="email" placeholder="Votre email"
+              /></label>
+            </div>
+            <div class="form-group">
+              <label
+                >Téléphone *<input type="tel" placeholder="Votre téléphone"
+              /></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Votre projet d’achat</legend>
+          <label
+            >Votre type de projet
+            <select>
+              <option>Oui, une voiture neuve</option>
+              <option>Oui, une voiture d’occasion</option>
+            </select>
+          </label>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label
+                >Marque
+                <select>
+                  <option>Peugeot</option>
+                  <option>Citroën</option>
+                  <option>DS</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-group">
+              <label
+                >Modèle
+                <select>
+                  <option>508</option>
+                  <option>208</option>
+                  <option>3008</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <p class="mentions">
+          Vos données personnelles seront traitées par SPOTICAR et PSA
+          AUTOMOBILES SA, situé au 2-10 Boulevard de l’Europe, 78300 Poissy, aux
+          fins de traitement de l'estimation. Le tout est décrit dans la
+          politique de confidentialité et les conditions générales
+          d’utilisation.
+        </p>
+
+        <label class="checkbox">
+          <input type="checkbox" /> En cochant cette case, je reconnais avoir
+          pris connaissance et accepté les conditions générales d’utilisation du
+          site psa-retail.com*
+        </label>
+
+        <!-- Boutons -->
+        <div class="nav-buttons">
+          <button
+            type="button"
+            class="btn-prev"
+            onclick="location.href='map.html'"
+          >
+            PRÉCÉDENT
+          </button>
+          <button
+            type="button"
+            class="btn-next"
+            onclick="location.href='estimation.html'"
+          >
+            VALIDER ➜
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
